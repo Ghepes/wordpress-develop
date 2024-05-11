@@ -37,9 +37,9 @@ define( 'WP_DEBUG', true );
  * DO NOT use a production database or one that is shared with something else.
  */
 
-define( 'DB_NAME', 'youremptytestdbnamehere' );
-define( 'DB_USER', 'yourusernamehere' );
-define( 'DB_PASSWORD', 'yourpasswordhere' );
+define( 'DB_NAME', 'Auto-ncmaze' );
+define( 'DB_USER', 'root' );
+define( 'DB_PASSWORD', '' );
 define( 'DB_HOST', 'localhost' );
 define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', '' );
@@ -50,20 +50,20 @@ define( 'DB_COLLATE', '' );
  * Change these to different unique phrases!
  * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define('AUTH_KEY',         '++|)i&$UEG=8E]VA!# Go.:aByqm}6yVa9*_Z.2$@I}^$j/OpjHedU~)o@JSfubg');
+define('SECURE_AUTH_KEY',  'I}D;SwynDe61u?#?3 hmtIkV(@ASz9z/%Z80>J1oY-`=G&Xw|K}BCH|T6+|a-`4D');
+define('LOGGED_IN_KEY',    'd3SpO4-(SxOW[Sl+rbnurp16Hk__qV}zw.L{*McD8WSl%|D*@D{%LL: * %GT;sz');
+define('NONCE_KEY',        'bMishf<I.jak-Foe4X{,_4hU@?UI-]D_9H1i0V U G2(?=U(j;#no& k/WO gx/3');
+define('AUTH_SALT',        ',N]|p9UQYe qnBFBb_+7;`$V^xS$,)9i@p_:2A`__b%n-2$K>fXDaT)}]MTOM?_|');
+define('SECURE_AUTH_SALT', '%DGA+K{4X_q,A,eWs,]&hSJ^[uUUQ*[Sjg|OoJ#rbsP~=M[Bvyxi,(I-Am3WHbRd');
+define('LOGGED_IN_SALT',   '`-+7t Ov+Wt<>s)wr:Ab$4f~XBoUQxvB=YQTw+isMq2E)4gc-TVdbHu*Yo((Iu@r');
+define('NONCE_SALT',       'Yxwp<l9<k|BNig0O <7d_!igfY/$qirOGJPh2Xo#hUy5WOY^ @!KpNud&d.A;8Ow');
 
 $table_prefix = 'wptests_';   // Only numbers, letters, and underscores please!
 
-define( 'WP_TESTS_DOMAIN', 'example.org' );
-define( 'WP_TESTS_EMAIL', 'admin@example.org' );
-define( 'WP_TESTS_TITLE', 'Test Blog' );
+define( 'WP_TESTS_DOMAIN', 'localhost' );
+define( 'WP_TESTS_EMAIL', 'admin@localhost' );
+define( 'WP_TESTS_TITLE', 'Develop 2024 Ghepes' );
 
 define( 'WP_PHP_BINARY', 'php' );
 
