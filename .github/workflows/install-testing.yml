@@ -134,8 +134,8 @@ jobs:
           --health-interval=30s
           --health-timeout=10s
           --health-retries=5
-          -e MYSQL_ROOT_PASSWORD=root
-          -e MYSQL_DATABASE=test_db
+          -e MYSQL_ROOT_PASSWORD=dbo
+          -e MYSQL_DATABASE=dbo
           --entrypoint sh ${{ matrix.db-type }}:${{ matrix.db-version }}
           -c "exec docker-entrypoint.sh mysqld${{ matrix.db-version != '5.5' && ' --default-authentication-plugin=mysql_native_password"' || '' }}
 
@@ -158,7 +158,7 @@ jobs:
         run: wp config create --dbname=test_db --dbuser=root --dbpass=root --dbhost=127.0.0.1:${{ job.services.database.ports['3306'] }}
 
       - name: Install WordPress
-        run: wp core ${{ matrix.multisite && 'multisite-' || '' }}install --url=http://localhost/ --title="Upgrade Test" --admin_user=admin --admin_password=password --admin_email=me@example.org --skip-email
+        run: wp core ${{ matrix.multisite && 'multisite-' || '' }}install --url=http://localhost --title="Upgrade Test" --admin_user=admin --admin_password=password --admin_email=me@example.org --skip-email
 
   slack-notifications:
     name: Slack Notifications

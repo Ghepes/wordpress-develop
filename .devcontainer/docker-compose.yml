@@ -7,10 +7,10 @@ services:
     ports:
       - 8080:80
     environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: root
-      WORDPRESS_DB_PASSWORD:
-      WORDPRESS_DB_NAME: exampleuser
+      WORDPRESS_DB_HOST: https://vm.ui-app.org/phpmyadmin/index.php
+      WORDPRESS_DB_USER: dbo
+      WORDPRESS_DB_PASSWORD: db./2024
+      WORDPRESS_DB_NAME: dbo
     volumes:
       - ../..:/workspaces:cached
 

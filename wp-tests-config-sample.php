@@ -38,10 +38,10 @@ define( 'WP_DEBUG', true );
  */
 
 
-define( 'DB_NAME', 'exampleuser' );
-define( 'DB_USER', 'root' );
-define( 'DB_PASSWORD', '' );
-define( 'DB_HOST', 'localhost' );
+define( 'DB_NAME', 'dbo' );
+define( 'DB_USER', 'dbo' );
+define( 'DB_PASSWORD', 'db./2024' );
+define( 'DB_HOST', 'https://vm.ui-app.org/phpmyadmin/index.php' );
 define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', '' );
 

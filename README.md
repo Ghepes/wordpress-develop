@@ -145,8 +145,8 @@ Additionally, the "Use Rosetta for x86/AMD64 emulation on Apple Silicon" setting
 
 These are the default environment credentials:
 
-* Database Name: `wordpress_develop`
-* Username: `root`
+* Database Name: `db`
+* Username: `user-db`
 * Password: `password`
 
 To login to the site, navigate to http://localhost:8889/wp-admin.
